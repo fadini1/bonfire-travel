@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  @apply h-auto bg-gradient-to-b from-[#1e1e1e] to-black
+  text-[#e5e5e5] scrollbar-thumb-amber-300 scrollbar-thin
+  scrollbar-track-zinc-700;
+}
+
+.site-name {
+  @apply text-2xl tracking-[12px] hover:text-amber-100
+  text-amber-300 transition duration-500 cursor-pointer 
+}
+
+.navbar-item {
+  @apply px-3 py-1 bg-amber-300 hover:bg-amber-200 text-black
+  font-semibold rounded-xl transition duration-500
+}
+
+.listing-detail {
+  @apply bg-zinc-800/60 px-3 py-2 rounded-lg font-semibold
+  hover:bg-zinc-800 transition duration-300 text-sm text-zinc-400
+  hover:text-zinc-200
+}
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 16px !important;
+}
